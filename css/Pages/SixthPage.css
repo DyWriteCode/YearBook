@@ -97,6 +97,12 @@
     top: 93.83vw;
     left: -13.44vw;
 }
+.showpage.page6_14{
+    width: 113.44vw;
+    height: 20.46vw;
+    top: 93.83vw;
+    left: -13.44vw;
+}
 .el-text.text6_2{
     width: 113.44vw;
     height: 20.46vw;
@@ -107,6 +113,24 @@
     top: 0px;
     left: 0px;
 }
-.el-text{
-    font-family: qiaoqiaoti!important;
+.el-text.text6_3{
+    width: 57.44vw;
+    height: 20.46vw;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 4.69vw;
+    line-height: 1.8;
+    top: 0px;
+    left: 0px;
+    right:0px;
+}
+.el-text.text6_4{
+    width: 130.16vw;
+    height: 54.32vw;
+    text-align: center;
+    color: rgb(18, 146, 179);
+    font-size: 4.69vw;
+    line-height: 1.45;
+    top: 0px;
+    left: 0px;
 }

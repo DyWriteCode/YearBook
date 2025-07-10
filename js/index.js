@@ -19,8 +19,9 @@ var mySwiper = new Swiper ('.swiper-container', {
 var music = document.getElementById("music");
 var musicIg = document.querySelectorAll(".musicIg")[0];
 var musicImg = document.querySelectorAll(".musicImg")[0];
-var audio = document.querySelector("audio");
+var audio;
 var flag = 1;
+var userInteracted = false;
 music.onclick = function () {
     if (flag == 1) {
         musicImg.style.display = "none";
@@ -34,4 +35,20 @@ music.onclick = function () {
         audio.play();
         flag = 1;
     }
-};
+}; 
+
+// Windows Setting
+window.onload = function setupInteractionDetection() {
+    // 监听所有交互事件
+    const events = ['click', 'keydown', 'touchstart', 'scroll'];
+    events.forEach(eventType => {
+        document.addEventListener(eventType, (e) => {
+            // 标记用户已交互
+            if (!userInteracted) {
+                userInteracted = true;
+                audio = document.querySelector("audio");
+                audio.play();
+            }
+        });
+    });
+}
